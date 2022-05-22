@@ -91,8 +91,8 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin: 80px auto 0;
+    width: max(30%, 600px);
+    margin: 80px auto 0px;
     border-radius: 15px;
     padding: 40px;
     background-color: #0d0d0d;
@@ -136,6 +136,7 @@ legend {
 textarea {
     border-radius: 12px;
     margin-top: 10px;
+    padding: 6px;
 }
 
 button {
@@ -157,4 +158,24 @@ button:hover {
 }
 button:active {
     background-color: #000;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    height: 80px;
+    background-color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.gitLogo {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 6px;
 }
