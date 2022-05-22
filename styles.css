@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+.parallax__stage {
+    height: 110vh;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .parallax__layer {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .parallax__layer--1,
+  .parallax__layer--2,
+  .parallax__layer--3 {
+      margin-top: 300px;
+  }
+
+  .parallax__layer--0 {
+    transform-origin: 0 0;
+    transform: translateZ(-10px);
+  }
+  
+  .parallax__layer--1 {
+      transform-origin: 0 0;
+      transform: translateZ(-15px);
+  }
+  .parallax__layer--2 {
+    transform-origin: 0 0;
+    transform: translateZ(-20px);
+}
+
+.parallax__layer--3 {
+    transform-origin: 0 0;
+    transform: translateZ(-25px);
+}
+
+.parallax__stage {
+    perspective: 1;
+  }
+
+  .content {
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 100vh;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+
+/*
+$parallax__layers: 4;
+$parallax__amount: 1;
+
+@for $i from 0 through $parallax__layers {
+  $distance: -$parallax__amount * ($parallax__layers - $i);
+  .parallax__layer--#{$i} {
+    background-color: rgba(0, 0, 0, (1 + $i) / 10);
+    transform: translateZ($distance#{px});
+  }
+}
+*/
