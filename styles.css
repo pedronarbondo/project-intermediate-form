@@ -98,6 +98,7 @@ form {
     background-color: #0d0d0d;
     border: 1px solid grey;
     justify-content: center;
+    gap: 20px;
 
 }
 
@@ -109,7 +110,8 @@ form {
 .first,
 .last,
 .email,
-.number {
+.number,
+.drugs {
     display: flex;
     flex-direction: column;
 }
@@ -118,4 +120,41 @@ input {
     height: 30px;
     border-radius: 10px;
     color: black;
+}
+input[type="checkbox"] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-left: 6px;
+}
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+textarea {
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: -10px;
+    color: black;
+    width: 120px;
+    height: 35px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+
+button:hover {
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+button:active {
+    background-color: #000;
 }

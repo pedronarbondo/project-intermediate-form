@@ -58,8 +58,40 @@
                     <label for="number">Phone number</label>
                     <input type="tel" name="number" id="number" placeholder="Format: 099 123 456 or 099123456" pattern="[0][1-9]{2}[\s]?[0-9]{3}[\s]?[0-9]{3}" required>
                 </div>
+                <div class="drugs">
+                    <fieldset>
+                        <legend>Do you have trouble with any of the following drugs?</legend>
+                        <label>(Shame-free)</label>
+                        <div class="drugs">
+                            <div>  
+                                <input type="checkbox" name="drugs1" id="drugs1">
+                                <label for="drugs1">Amphetamines</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="drugs2" id="drugs2">
+                                <label for="drugs2">Alcohol</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="drugs3" id="drugs3">
+                                <label for="drugs3">Cocaine</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="drugs4" id="drugs4">
+                                <label for="drugs4">Other</label>
+                            </div>
+                        </div>
+                        <label for="other-choice">Please specify:</label>
+                        <input type="text" name="other-choice" id="other-choice">
+                    </fieldset>
+                </div>
+                <div class="comments">
+                    <label for="comments">Is there anything you'd like us to know?</label>
+                    <textarea id="comments" name="comments" cols="40" rows="4"></textarea>
+                </div>
+                <label>We'll contact you.</label>
+                <button type="submit" value="submit">Send info</button>
 
-                <button>submit</button>
+            
             </form>
 
 
