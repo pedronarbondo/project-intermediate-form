@@ -28,7 +28,7 @@
   .parallax__layer--1,
   .parallax__layer--2,
   .parallax__layer--3 {
-      margin-top: 600px;
+      margin-top: 80vh;
   }
 
   .parallax__layer--0 {
@@ -44,8 +44,23 @@
       transform: translateZ(-4px) scale(3);
   }
 
-
 .parallax__stage {
     perspective: 2px;
   }
 
+
+.content {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    margin-top: 120vh;
+}
+
+.hero-text {
+    max-width: 80ch;
+    text-align: center;
+    margin: 0 auto 0;
+}
+h3 {
+    color: white;
+}
