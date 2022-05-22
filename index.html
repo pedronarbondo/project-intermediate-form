@@ -43,14 +43,23 @@
                 <div class="names">
                     <div class="first">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" name="firstName" placeholder="Bojack" required>
                     </div>
                     <div class="last">
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Horseman" required>
                     </div>
                 </div>
+                <div class="email">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder ="bojackhorseman@hollywoo.com" required>
+                </div>
+                <div class="number">
+                    <label for="number">Phone number</label>
+                    <input type="tel" name="number" id="number" placeholder="Format: 099 123 456 or 099123456" pattern="[0][1-9]{2}[\s]?[0-9]{3}[\s]?[0-9]{3}" required>
+                </div>
 
+                <button>submit</button>
             </form>
 
 

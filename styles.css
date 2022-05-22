@@ -107,7 +107,9 @@ form {
     gap: 20%;
 }
 .first,
-.last {
+.last,
+.email,
+.number {
     display: flex;
     flex-direction: column;
 }
