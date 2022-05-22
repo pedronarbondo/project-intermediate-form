@@ -1,6 +1,15 @@
+@font-face {
+    font-family: "work-sans";
+    src: url(../project-intermediate-form/font/work-sans.ttf);
+}
+
+
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: "work-sans", sans-serif;
+    color: #e6e6e6;
+    line-height: 1.7;
 }
 
 
@@ -57,10 +66,54 @@
 }
 
 .hero-text {
-    max-width: 80ch;
-    text-align: center;
+    max-width: 70ch;
     margin: 0 auto 0;
 }
-h3 {
+.quote {
+    text-align: center;
+    font-weight: bold;
     color: white;
+}
+
+.quote-author {
+    text-align: end;
+    font-style: italic;
+    
+}
+
+.welcome {
+    margin-top: 150px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 80px auto 0;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: #0d0d0d;
+    border: 1px solid grey;
+    justify-content: center;
+
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+.first,
+.last {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 30px;
+    border-radius: 10px;
+    color: black;
 }
